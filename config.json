@@ -1,0 +1,9 @@
+{
+    "chrome_debugger_address": "xxx.xxx.xxx.xxx:xxxx",
+    "chrome_driver_path": "C:\\path\\to\\chromedriver.exe",
+    "url": "https://www.xxx.com",
+    "specified_time_jst": "2024-06-16T12:35:00",
+    "date_value": "xxxxxxxx",
+    "time_value": "xxxxxxxx",
+    "webdriver_wait_time": 10
+}
