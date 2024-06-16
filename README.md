@@ -1,4 +1,4 @@
-## 必要条件
+## 環境
 
 - Windows 11
 - google chrome
