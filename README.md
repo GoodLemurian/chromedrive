@@ -78,7 +78,7 @@
 3. スクリプトを実行します。
 
     ```cmd
-    python chromedrive.py
+    python chromedrive4.py
     ```
 
 4. specified_time_jstで指定した日時に操作が始まります。
