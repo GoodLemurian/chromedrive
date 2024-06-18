@@ -39,6 +39,17 @@ while datetime.now(jst) < specified_time_jst:
 # 指定のURLにアクセス
 driver.get(url)
 
+# モーダルウィンドウの操作
+try:
+    modal = WebDriverWait(driver, 10).until(
+        EC.visibility_of_element_located((By.ID, 'bookingGuideLayer'))  # モーダルウィンドウのIDに置き換え
+    )
+    # モーダルウィンドウ内の要素を操作
+    close_button = driver.find_element(By.CLASS_NAME, 'layerCloseBtn')
+    close_button.click()
+except Exception as e:
+    print("Error:", e)
+
 # Select要素を取得1
 select_element = WebDriverWait(driver, webdriver_wait_time).until(EC.presence_of_element_located((By.ID, "play_date")))
 actions = ActionChains(driver)
